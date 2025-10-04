@@ -11,7 +11,7 @@ const Hero = () =>{
                 {/*AWARDS */}
                 <div className="awards">
                     <h2>Top Rated Designer</h2>
-                    <p>Loremsit tempore eveniet adipisci, ratione sunt quis perferendis nostrum aliquam itaque commodi esse, quod rerum minima sint assumenda, temporibus in. Ex!</p>
+                    <p>Loresse, quod rerum minima sint assumenda, temporibus in. Ex!</p>
                     <div className="awardList">
                         <img src="/award1.png" alt="" />
                         <img src="/award2.png" alt="" />
@@ -20,7 +20,7 @@ const Hero = () =>{
                     </div>
                 </div>
                 {/*SCROLL SVG */}
-                <a href="#services">
+                <a href="#services" className="scroll">
                   <svg
                         width="50px"
                         height="50px"
@@ -51,6 +51,9 @@ const Hero = () =>{
                     <a href="/">
                         <img src="/youtube.png" alt="" />
                     </a>
+                    <div className="followTextContainer">
+                        <div className="followText">FOLLOW ME</div>
+                    </div>
                 </div>
                 {/* BUBBLE */}
                 <Speech />
