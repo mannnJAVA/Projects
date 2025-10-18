@@ -2,6 +2,7 @@ import JavaModelContainer from "./java/JavaModelContainer"
 import ConsoleModelContainer from "./console/ConsoleModelContainer"
 import ComputerModelContainer from "./computer/ComputerModelContainer"
 import "./services.css" 
+import Counter from "./java/Counter"
 
 const service = [
     {
@@ -31,7 +32,7 @@ const service = [
                 <h1 className="sTitle">How do I help?</h1>
                 <div className="serviceList">
                     {service.map((service) => (
-                        <div className="section" key={service.id}>
+                        <div className="service" key={service.id}>
                             <div className="serviceIcon">
                                 <img src={service.img} alt="" />
                             </div>
@@ -42,7 +43,11 @@ const service = [
 
                          </div>
                     ))}
-                        
+                 </div>
+                 <div className="counterList">
+                    <Counter from={0} to={104} text="Projects Completed" />
+                    <Counter from={0} to={72} text="Happy Clients" />
+
                  </div>
             </div>
              <div className="sSection right">
