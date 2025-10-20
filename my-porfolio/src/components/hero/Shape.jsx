@@ -5,7 +5,7 @@ const Shape = () => {
     <>
       <Sphere args={[1, 32, 32]} scale={2.4}>
         <MeshDistortMaterial
-          color="#DB8B98"
+          color="#ed9caaff"
           distort={0.5}
           speed={2}
         />

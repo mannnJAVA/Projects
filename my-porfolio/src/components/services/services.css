@@ -1,30 +1,36 @@
-.services{
+* {
+    box-sizing: border-box;
+}
+
+.services {
     height: 100%;
     overflow: hidden;
     display: flex;
 }
 
-.sSection{
+.sSection {
     width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-
 }
 
-.sTitle{
+.sTitle {
     font-size: 66px;
     margin-bottom: 24px;
 }
 
-.serviceList{
-    display:flex;
-    flex-direction: column;
+/* Stack services vertically */
+.serviceList {
+    display: flex;
+    flex-direction: column; /* stack vertically */
+    width: 100%;
     gap: 16px;
 }
 
-.service{
-    width: 50%;
+/* Each service takes 50% width of serviceList */
+.service {
+    width: 50%; /* 50% of serviceList */
     padding: 30px;
     border-radius: 20px;
     background-color: #2f213f;
@@ -32,10 +38,9 @@
     align-items: center;
     gap: 16px;
     cursor: pointer;
-
 }
 
-.serviceIcon{
+.serviceIcon {
     width: 48px;
     height: 48px;
     border-radius: 100%;
@@ -44,93 +49,85 @@
     justify-content: center;
 }
 
-.serviceIcon img{
+.serviceIcon img {
     width: 24px;
     height: 24px;
 }
 
-
-.serviceInfo{
+.serviceInfo {
     font-size: 13px;
     font-weight: 300;
 }
 
-.service:nth-child(1) .serviceIcon{
-    background-color:#dd4c62 ;
+/* Individual service icon colors */
+.service:nth-child(1) .serviceIcon {
+    background-color: #dd4c62;
+}
+.service:nth-child(2) .serviceIcon {
+    background-color: #025656;
+}
+.service:nth-child(3) .serviceIcon {
+    background-color: #6c5c0c;
 }
 
-.service:nth-child(2) .serviceIcon{
-    background-color:#025656 ;
+/* Counter list styling */
+.counterList {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 24px;
 }
 
-.service:nth-child(3) .serviceIcon{
-    background-color:#6c5c0c ;
-}
-
-.counterList{
-     width: 50%;
-     display: flex;
-     align-items: center;
-     justify-content: space-between;
-     margin-top: 24px;
-}
-
-.counter{
+.counter {
     display: flex;
     flex-direction: column;
     gap: 8px;
-
 }
 
-.counter h1{
+.counter h1 {
     font-size: 48px;
-    color:#dd4c62;
-
+    color: #dd4c62;
 }
 
-.counter p{
+.counter p {
     font-size: 13px;
 }
 
-@media (max-width:1536px ){
+/* Media Queries */
+@media (max-width: 1536px) {
     .service, .counterList {
         width: 70%;
     }
 }
 
-@media (max-width:1280px ){
+@media (max-width: 1280px) {
     .sTitle {
         font-size: 60px;
     }
-
-    .service{
-
-        width: 100%;
-    }
 }
 
-@media (max-width:1024px ){
+@media (max-width: 1024px) {
     .sTitle {
         font-size: 48px;
     }
 
-    .service, .counterList{
-            width: 100%;
+    .service, .counterList {
+        width: 100%;
     }
 }
 
-@media (max-width:768px ){
-    .services{
+@media (max-width: 768px) {
+    .services {
         align-items: center;
         justify-content: center;
     }
 
-    .sSection{
+    .sSection {
         width: 100%;
     }
 
-    .sSection.right{
+    .sSection.right {
         display: none;
     }
 }
-/**/
