@@ -42,9 +42,11 @@ section:nth-child(1){
 section:nth-child(2){
   background-color: rgb(26, 1, 47);
 }section:nth-child(3){
-  background-color: rgb(176, 53, 168);
+  background-color: rgb(26, 1, 47);
+
 }section:nth-child(4){
-  background-color: aquamarine;
+  background-color: rgb(26, 1, 47);
+  
 }
 
 @media(min-width:640px){
